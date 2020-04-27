@@ -1,0 +1,45 @@
+//<BUTTONS>====================================================================================================
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 0px;
+	color: #ad7835;
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 178px;
+	height: 56px;
+	border: 1px solid #ad7835;
+	position: relative;
+	@include anim(0.3s, 0s);
+	&:hover {
+		color: #fff;
+	}
+	&.fw {
+		width: 100%;
+	}
+}
+
+.srticle__btn {
+	border: none;
+	justify-content: flex-start;
+	width: 112px;
+	height: 12px;
+	margin-bottom: 30px;
+	&:after {
+		content: "\f054";
+		font-family: "FontAwesome";
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+	&:hover {
+		background-color: initial;
+	}
+}
+//</BUTTONS>====================================================================================================

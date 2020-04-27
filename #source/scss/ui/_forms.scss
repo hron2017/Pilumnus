@@ -1,0 +1,93 @@
+//<FORM>====================================================================================================
+.form {
+  &__btn {
+    @include button-reset;
+  }
+}
+.form-row {
+  @include flexbox();
+}
+.form__column {
+  padding: 0px 15px;
+}
+.form-input-r {
+  margin-right: 47px;
+}
+.form-input {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 42px;
+
+  @media (max-width: $md2+px) {
+    width: 100%;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 0.3;
+  }
+}
+.form-button {
+}
+//</FORM>====================================================================================================
+
+//<INPUT>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input {
+  border-radius: 0 !important;
+  width: 100%;
+  display: block;
+  padding: 0px 10px;
+  background: transparent;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 28px;
+  line-height: 52px;
+  &.focus {
+  }
+  &.err {
+    border-bottom: 1px solid red;
+  }
+}
+.textarea {
+  position: relative;
+  margin-bottom: 67px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 0.3;
+  }
+  &.err {
+    border-bottom: 1px solid red;
+  }
+}
+textarea {
+  resize: none;
+  display: block;
+  padding-left: 12px;
+  background: transparent;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 16px;
+  width: 100%;
+  min-height: 80px;
+}
+//</INPUT>====================================================================================================
