@@ -234,6 +234,9 @@
 		align-items: center;
 		margin-bottom: 70px;
 	}
+	@media (min-width: 1300px) {
+		margin-left: 63px;
+	}
 	&-item {
 		margin: 0px 10px 10px 0px;
 

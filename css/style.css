@@ -701,6 +701,9 @@ font-family: "FontAwesome";
       -ms-flex-align: center;
       align-items: center;
       margin-bottom: 70px; } }
+  @media (min-width: 1300px) {
+    .grid {
+      margin-left: 63px; } }
   .grid-item {
     margin: 0px 10px 10px 0px; }
     @media (min-width: 767.98px) {
