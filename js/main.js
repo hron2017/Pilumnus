@@ -709,20 +709,13 @@ $('.video-play').click(function () {
 	$('.video__poster').fadeOut();
 });
 //====================  <!-- Video -->  ========================//
-/*
-$('.gallary-grid__container').masonry({
-	// options
-	itemSelector: '.gallary-grid__item',
-	columnWidth: 150,
-	fitWidth: true
 
-});*/
 wow = new WOW(
 	{
 		animateClass: 'animated',
 		offset: 100,
 		callback: function (box) {
-			console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+
 		}
 	}
 );
